@@ -1,0 +1,72 @@
+/* Delivery Conditions Page CSS */
+
+/* Header Container */
+.conditii-livrare-header-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./DeliveryImage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #D8DCDF;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  /* Delivery Sections Container */
+  .delivery-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 900px;
+  }
+  
+  /* Delivery Rows */
+  .delivery-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Individual Delivery Section */
+  .delivery-section {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: #313540;
+    color: #D8DCDF;
+  }
+  
+  .delivery-row:nth-child(1) .delivery-section:nth-child(2) {
+    background-color: #D8DCDF;
+    color: #313540;
+  }
+  
+  .delivery-row:nth-child(2) .delivery-section:nth-child(1) {
+    background-color: #D8DCDF;
+    color: #313540;
+  }
+  
+  .delivery-row:nth-child(3) .delivery-section:nth-child(2) {
+    background-color: #D8DCDF;
+    color: #313540;
+  }
+  
+  .delivery-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .delivery-section p {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+  

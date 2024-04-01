@@ -1,0 +1,46 @@
+.footer {
+  background-color: #313540;
+  color: #D8DCDF;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-content div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-content .icon {
+  margin-left: 5px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #D8DCDF;
+}
+
+.copyright {
+  background-color: #D8DCDF;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  color: #313540;
+}

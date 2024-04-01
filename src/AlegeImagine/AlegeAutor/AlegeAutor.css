@@ -1,0 +1,44 @@
+.alege-autor-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+  /* Styles for the fourth option and onward */
+  .alege-autor-container .option-container {
+    flex: 1 0 calc(33.33% - 20px); /* Three items per row with margin */
+  }
+
+  .alege-autor-container .option-container:nth-child(1) .option-content {
+    background-image: url('./Autori/LeonardodaVinci.jpg');
+    background-size: cover;
+  }
+
+  .alege-autor-container .option-container:nth-child(2) .option-content {
+    background-image: url('./Autori/Michelangelo.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .alege-autor-container .option-container:nth-child(3) .option-content {
+    background-image: url('./Autori/PeterPaulRubens.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .alege-autor-container .option-container:nth-child(4) .option-content {
+    background-image: url('./Autori/RaffaelloSanzio.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .alege-autor-container .option-container:nth-child(5) .option-content {
+    background-image: url('./Autori/SandroBotticelli.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .alege-autor-container .option-container:nth-child(6) .option-content {
+    background-image: url('./Autori/VincentvanGogh.jpg');
+    background-position: center;
+    background-size: cover;
+  }

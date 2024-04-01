@@ -1,0 +1,148 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-text-container {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #D8DCDF;
+  }
+  
+  .text-overlay h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .main-text-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #D8DCDF;
+    color: #313540;
+  }
+  
+  .main-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #313540;
+  }
+
+  .our-team-container {
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    background-color: #CDAA97;
+    color: #313540;
+  }
+  
+  .our-team-container h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .team-members-container {
+    max-width: 700px;
+    margin: 0 auto;  
+  }
+
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Add margin to separate image from text */
+    border: 5px solid #D8DCDF;
+  }
+  
+  .member-info {
+    max-width: 200px; /* Adjust maximum width as needed */
+  }
+  
+  .member-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .member-info p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #313540;
+    margin: 0; /* Remove default margin */
+  }
+  
+
+/* Additional Container */
+.additional-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #313540;
+  color: #D8DCDF;
+}
+
+.additional-text {
+  text-align: center;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Split Container - 50% Text, 50% Image */
+.split-container {
+  display: flex;
+  background-color: #D8DCDF;
+  height: 500px;
+}
+
+.split-text {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #313540;
+  text-align: right;
+  padding-left: 70px;
+  align-self: center; /* Center text vertically */
+}
+
+.split-image {
+  flex: 1;
+  align-self: center;
+}
+
+.split-image img {
+  width: 80%;
+  height: auto;
+  padding-left: 70px;
+}

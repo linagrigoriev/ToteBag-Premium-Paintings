@@ -1,0 +1,82 @@
+/* AlegeImagine.css */
+
+.alege-imagine-container {
+    display: flex;
+    height: 700px;
+  }
+  
+  .option-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .option-content {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    transition: color 0.3s, transform 0.3s, border-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .option-container:hover .option-content {
+    color: #E19538;
+  }
+  
+  .option-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+  
+  
+  .option-container:hover .option-content {
+    transform: scale(1.1);
+  }
+  
+  .option-content h1 {
+    margin: 0;
+    padding: 0;
+    padding: 100px 50px;
+    border: 5px solid #fff;
+  }
+  
+  /* Styles for the first option */
+  .alege-imagine-container .option-container:nth-child(1) .option-content {
+    background-image: url('./RandomChoicePhoto.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Styles for the second option */
+  .alege-imagine-container .option-container:nth-child(2) .option-content {
+    background-image: url('./AlegeAutor/Autori/VincentvanGogh.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Styles for the third option */
+  .alege-imagine-container .option-container:nth-child(3) .option-content {
+    background-image: url('./AlegeCuloare/Culori/ColorYellow.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  

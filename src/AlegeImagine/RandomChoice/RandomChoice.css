@@ -1,0 +1,46 @@
+/* Random Choice Page CSS */
+
+/* Header Container */
+.header-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F4732;
+    color: #D8DCDF;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .header-container p {
+    margin-top: 50px
+  }
+  
+  /* Random Design Container */
+  .random-design-container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDAA97;
+  }
+  
+  .random-design-image {
+    height: 500px;
+    width: auto;
+    margin-bottom: 20px;
+    border: 5px solid #D8DCDF;
+  }
+  
+  .random-design-info {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #313540;
+  }
+  
+  .random-design-info p {
+    margin: 5px 0;
+  }
+  
