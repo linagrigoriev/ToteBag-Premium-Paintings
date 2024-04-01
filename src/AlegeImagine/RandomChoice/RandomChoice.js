@@ -13,7 +13,7 @@ function RandomChoicePage() {
     <div className="random-choice-container">
       <div className="navbar">
         <div className="nav-left">
-          <Link to="/">
+          <Link to="/ToteBag-Premium-Paintings">
             <button>Pagina Principala</button>
           </Link>
           <div className="dropdown">
