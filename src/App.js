@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./MainPage";
+import DespreNoi from "./DespreNoi/DespreNoi.js";
+import RandomChoice from "./AlegeImagine/RandomChoice/RandomChoice.js";
+import AlegeAutor from './AlegeImagine/AlegeAutor/AlegeAutor.js';
+import AlegeCuloare from './AlegeImagine/AlegeCuloare/AlegeCuloare.js';
+import ConditiiLivrare from './ConditiiLivrare/ConditiiLivrare.js';
+import AlegeImagine from './AlegeImagine/AlegeImagine.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/despre-noi" element={<DespreNoi />} />
+        <Route path="/alege-imagine" element={<AlegeImagine />} />
+        <Route path="/alege-imagine/random-choice" element={<RandomChoice />} />
+        <Route path="/alege-imagine/alege-autor" element={<AlegeAutor />} />
+        <Route path="/alege-imagine/alege-culoare" element={<AlegeCuloare />} />
+        <Route path="/conditii-livrare" element={<ConditiiLivrare />} />
+        </Routes>
+    </Router>
   );
 }
 

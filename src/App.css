@@ -1,38 +1,317 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #D8DCDF;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left button {
+  margin-right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the Dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change Link Color on Hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the Dropdown Content on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-right {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+
+/* Main Image Container styles */
+.main-image-container {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.main-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Text Container styles */
+.text-container {
+  background-color: #D8DCDF;
+  padding: 20px;
   text-align: center;
+  font-weight: 700;
+  color: #313540;
+  font-size: 30px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Second Text Container styles */
+.second-text-container {
+  background-color: #7F4732;
+  padding: 20px;
+  text-align: center;
+  color: #D8DCDF;
+  font-size: 20px;
+  height: 110px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second-text {
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Second Images Container styles */
+.second-images-container {
+  display: flex;
+  height: 700px;
+}
+
+.second-images {
+  display: flex;
+  flex: 1;
+}
+
+.image-group1,
+.image-group2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-group1 img,
+.image-group2 img {
+  object-fit: cover;
+}
+
+.image-group1 img {
+  height: 50%;
+}
+
+.image-group2 {
+  width: 50%;
+}
+
+.image-group2 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Reviews Container styles */
+.reviews-container-text {
+  height: 460px;
+  background-color: #D8DCDF;
+}
+
+.reviews-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #7F4732;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.review-container {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #7F4732;
+  color: #D8DCDF;
+  border-radius: 20px;
+}
+
+.review-container .nume {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.review-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #D8DCDF;
+}
+
+.container2,
+.container3 {
+  flex: 1;
+  height: 50%; /* Each container takes 50% of the parent's height */
+}
+
+.container2 {
+  align-self: flex-end; /* Align container2 to the bottom */
+}
+
+.container3 {
+  align-self: flex-end; /* Align container3 to the top */
+}
+
+.button-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('ButtonImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent-button {
+  padding: 15px 30px;
+  background-color: transparent;
+  background-color: #313540;
+  color: #D8DCDF;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 700;
+  border: 2px solid #313540; /* Border color */
+  border-radius: 20px;
+}
+
+.transparent-button:hover {
+  color:  #E19538; /* Text color */
+}
+
+.contact-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D8DCDF;
+  border: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #313540;
+  font-size: 20px;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #313540;
+  font-size: 20px;
+}
+
+.contact-form {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group input {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #313540;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: "Rubik"
+}
+
+.textarea-group {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.textarea-group textarea {
+  border: 1px solid #313540;
+  border-radius: 5px;
+  resize: vertical;
+  resize: both;
+  width: 100%;
+  font-size: 17px;
+  font-family: "Rubik"
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #7F4732;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 17px;
+}
+
+.submit-button:hover {
+  background-color: #E19538;
 }
