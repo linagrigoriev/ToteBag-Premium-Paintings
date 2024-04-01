@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/ToteBag-Premium-Paintings" element={<MainPage />} />
         <Route path="/despre-noi" element={<DespreNoi />} />
         <Route path="/alege-imagine" element={<AlegeImagine />} />
         <Route path="/alege-imagine/random-choice" element={<RandomChoice />} />
