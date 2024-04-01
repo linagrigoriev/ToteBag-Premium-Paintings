@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ToteBag-Premium-Paintings/static/css/main.45791e52.css",
-    "main.js": "/ToteBag-Premium-Paintings/static/js/main.04c3c69a.js",
+    "main.js": "/ToteBag-Premium-Paintings/static/js/main.934218d0.js",
     "static/js/453.ed3810f9.chunk.js": "/ToteBag-Premium-Paintings/static/js/453.ed3810f9.chunk.js",
     "static/media/ButtonImage.jpg": "/ToteBag-Premium-Paintings/static/media/ButtonImage.9f73c9253235521bcd83.jpg",
     "static/media/ImageMain.jpg": "/ToteBag-Premium-Paintings/static/media/ImageMain.35b71c3b802b123ad635.jpg",
@@ -45,11 +45,11 @@
     "static/media/rubik-hebrew-400-normal.woff2": "/ToteBag-Premium-Paintings/static/media/rubik-hebrew-400-normal.9f12218709f0b72dbf18.woff2",
     "index.html": "/ToteBag-Premium-Paintings/index.html",
     "main.45791e52.css.map": "/ToteBag-Premium-Paintings/static/css/main.45791e52.css.map",
-    "main.04c3c69a.js.map": "/ToteBag-Premium-Paintings/static/js/main.04c3c69a.js.map",
+    "main.934218d0.js.map": "/ToteBag-Premium-Paintings/static/js/main.934218d0.js.map",
     "453.ed3810f9.chunk.js.map": "/ToteBag-Premium-Paintings/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45791e52.css",
-    "static/js/main.04c3c69a.js"
+    "static/js/main.934218d0.js"
   ]
 }
