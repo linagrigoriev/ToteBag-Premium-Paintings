@@ -139,9 +139,7 @@ body {
 .image-group2 img {
   width: 100%;
   height: 100%;
-}
-
-/* Reviews Container styles */
+}/* Reviews Container styles */
 .reviews-container-text {
   height: 460px;
   background-color: #D8DCDF;
@@ -164,10 +162,12 @@ body {
   gap: 20px;
   padding: 20px;
   padding-top: 60px;
+  justify-content: center;
 }
 
 .review-container {
-  flex: 1;
+  flex: 1 1 22%;
+  max-width: 250px; /* Optional: Set a max-width to prevent items from stretching too much */
   text-align: center;
   padding: 20px;
   background-color: #7F4732;
@@ -187,6 +187,78 @@ body {
   margin-bottom: 10px;
   border: 3px solid #D8DCDF;
 }
+
+@media screen and (max-width: 742px) {
+  .reviews-container-text {
+    height: 800px;
+  }
+
+  .reviews-container {
+    padding-top: 80px;
+  }
+
+  .nav-left {
+    display: flex;
+  }
+  
+.main-image-container img {
+  scale: 1.5;
+}
+  
+}
+
+@media screen and (max-width: 582px) {
+  .reviews-container-text {
+    height: 850px;
+  }
+
+}
+
+@media screen and (max-width: 494px) {
+  .reviews-container-text {
+    height: 950px;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .reviews-container-text {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .reviews-container-text {
+    height: 900px;
+  }
+  
+  .nav-left button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .reviews-container-text {
+    height: 1000px;
+  }
+  
+  .nav-left button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .reviews-container-text {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .reviews-container-text {
+    height: 1200px;
+  }
+}
+
+
 
 .container2,
 .container3 {
@@ -314,4 +386,33 @@ body {
 
 .submit-button:hover {
   background-color: #E19538;
+}
+
+.checkbox-group {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  /* Hide the default checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #313540;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #7F4732;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  color: #313540;
 }

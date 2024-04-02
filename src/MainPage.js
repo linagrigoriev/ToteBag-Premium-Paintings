@@ -129,6 +129,11 @@ function MainPage() {
           <div className="textarea-group">
             <textarea rows="5" placeholder="Mesaj"></textarea>
           </div>
+          
+          <div className="checkbox-group">
+            <input type="checkbox" id="terms-checkbox" />
+            <label htmlFor="terms-checkbox">Acceptarea termenilor & notificare email</label>
+          </div>
           <button className="submit-button">Trimite</button>
         </div>
       </div>
